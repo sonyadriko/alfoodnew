@@ -132,9 +132,9 @@ $headers[] = 'X-Location: -6.405821,106.064193';
 
                             }
                             */
-
-                sleep(5);
-                echo "\n";
+//
+            //    sleep(5);
+            //    echo "\n";
                 echo "\e[96m[!] Proses Redeem Vocher : COBAINGOJEK \n";
                 $data6 = '{"promo_code":"COBAINGOJEK"}';
                 $claim3 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data6, $headers);
@@ -195,6 +195,20 @@ $headers[] = 'X-Location: -6.405821,106.064193';
                 if($claims7->success == true)
                         {
                                 echo "\e[92m [✓]".$claims7->data->message;
+                        } else
+                            {
+                                echo "\e[91m [×] Gagal Claim Voucer !";
+                            }
+                sleep(5);
+                echo "\n";
+
+                echo "\e[96m[+] Proses Redeem Vocher : GPCIMLEK20 \n";
+                $data11 = '{"promo_code":"GPCIMLEK20"}';
+                $claim8 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data11, $headers);
+                $claims8 = json_decode($claim8[0]);
+                if($claims8->success == true)
+                        {
+                                echo "\e[92m [✓]".$claims8->data->message;
                         } else
                             {
                                 echo "\e[91m [×] Gagal Claim Voucer !";
