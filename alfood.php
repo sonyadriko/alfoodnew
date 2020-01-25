@@ -51,8 +51,8 @@ $headers[] = 'X-Location: -6.405821,106.064193';
                 echo "Token ~> ".$token." \n";
                 echo "\e[92m[+] Token Tersimpan di ~> ".$live." \n\n";
                 
-                // SANTAI19
-                echo "\e[96m[!] Proses Reedem Voucher 20+10 : WADAWGOJEK \n";
+              // SANTAI19
+               echo "\e[96m[!] Proses Reedem Voucher 20+10 : WADAWGOJEK \n";
                 $data3 = '{"promo_code":"WADAWGOJEK"}';
                 $claim = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data3, $headers);
                 $claims = json_decode($claim[0]); 
@@ -134,7 +134,7 @@ $headers[] = 'X-Location: -6.405821,106.064193';
                             
 //
                sleep(5);
-              echo "\n";
+               echo "\n";
                 echo "\e[96m[!] Proses Redeem Vocher : COBAINGOJEK \n";
                 $data6 = '{"promo_code":"COBAINGOJEK"}';
                 $claim3 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data6, $headers);
@@ -263,6 +263,7 @@ $headers[] = 'X-Location: -6.405821,106.064193';
         echo color("red","[×] Otp yang anda input salah");
         echo"\n==================================\n\n";
         echo color("yellow","[!] Silahkan input kembali\n");
+        goto otp;
     }
                     
                 } else
