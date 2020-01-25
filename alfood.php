@@ -263,7 +263,6 @@ $headers[] = 'X-Location: -6.405821,106.064193';
         echo color("red","[×] Otp yang anda input salah");
         echo"\n==================================\n\n";
         echo color("yellow","[!] Silahkan input kembali\n");
-        goto otp;
     }
                     
                 } else
