@@ -162,8 +162,8 @@ $headers[] = 'X-Location: -6.405821,106.064193';
                             }
                 sleep(5);
                 echo "\n";
-                echo "\e[96m[+] Proses Redeem Vocher : GOFOODSENANG20 \n";
-                $data8 = '{"promo_code":"GOFOODSENANG20"}';
+                echo "\e[96m[+] Proses Redeem Vocher : GOPAYTANGO \n";
+                $data8 = '{"promo_code":"GOPAYTANGO"}';
                 $claim5 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data8, $headers);
                 $claims5 = json_decode($claim5[0]);
                 if($claims5->success == true)
@@ -175,46 +175,7 @@ $headers[] = 'X-Location: -6.405821,106.064193';
                             }
                 sleep(5);
                 echo "\n";
-                echo "\e[96m[+] Proses Redeem Vocher : PAKEGOFOOD \n";
-                $data9 = '{"promo_code":"PAKEGOFOOD"}';
-                $claim6 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data9, $headers);
-                $claims6 = json_decode($claim6[0]);
-                if($claims6->success == true)
-                        {
-                                echo "\e[92m [✓]".$claims6->data->message;
-                        } else
-                            {
-                                echo "\e[91m [×] Gagal Claim Voucer !";
-                            }
-                sleep(5);
-                echo "\n";
-                echo "\e[96m[+] Proses Redeem Vocher : GOFOODYUK \n";
-                $data10 = '{"promo_code":"GOFOODYUK"}';
-                $claim7 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data10, $headers);
-                $claims7 = json_decode($claim7[0]);
-                if($claims7->success == true)
-                        {
-                                echo "\e[92m [✓]".$claims7->data->message;
-                        } else
-                            {
-                                echo "\e[91m [×] Gagal Claim Voucer !";
-                            }
-                sleep(5);
-                echo "\n";
-
-                echo "\e[96m[+] Proses Redeem Vocher : GPCIMLEK20 \n";
-                $data11 = '{"promo_code":"GPCIMLEK20"}';
-                $claim8 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data11, $headers);
-                $claims8 = json_decode($claim8[0]);
-                if($claims8->success == true)
-                        {
-                                echo "\e[92m [✓]".$claims8->data->message;
-                        } else
-                            {
-                                echo "\e[91m [×] Gagal Claim Voucer !";
-                            }
-                sleep(5);
-                echo "\n";
+            
                     
                 $cekvoucher = request('/gopoints/v3/wallet/vouchers?limit=10&page=1', $token);
                 $total = fetch_value($cekvoucher,'"total_vouchers":',',');
