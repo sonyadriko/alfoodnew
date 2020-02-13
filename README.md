@@ -1,6 +1,5 @@
 # Gojek Auto Register & Save Token 
-  Sudah Tidak Work, dikarenakan masa berlaku kode promo telah habis & tidak bisa digunakan
-  Tunggu Kode promo berikutnya
+  LALALALA PROJECT
 # install
 
   $pkg install curl
@@ -9,10 +8,10 @@
 
   $pkg install git
 
-  $git clone https://github.com/megatruh/malproject
+  $git clone https://github.com/sonyadriko/alfood
 
 # use 
 
-$cd malproject
+$cd alfood
 
 $php alfood.php
