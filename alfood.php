@@ -9,9 +9,8 @@ $headers[] = 'X-Location: -6.405821,106.064193';
 
         echo "\n";
         echo "\e[92m--------------------------------------------------\n";
-        echo "\e[92m|              SCRIPT BY ALFARKHAN               |\n";
+        echo "\e[92m|                       SCRIPT                   |\n";
         echo "\e[92m|            Komunitas Tumbuh Bersama            |\n";
-        echo "\e[92m|     https://github.com/megatruh/malproject/    |\n";
         echo "\e[92m|   SCRIPT GOJEK AUTO REGIST + AUTO SAVE TOKEN   |\n";
         echo "\e[92m|                    GOODLUCK                    |\n";
         echo "\e[92m--------------------------------------------------\n";
@@ -75,8 +74,8 @@ $headers[] = 'X-Location: -6.405821,106.064193';
                             
 //
             
-                echo "\e[96m[+] Proses Redeem Vocher : GOPAYTANGO \n";
-                $data8 = '{"promo_code":"GOPAYTANGO"}';
+                echo "\e[96m[+] Proses Redeem Vocher : GOFOOD021120A \n";
+                $data8 = '{"promo_code":"GOFOOD021120A"}';
                 $claim5 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data8, $headers);
                 $claims5 = json_decode($claim5[0]);
                 if($claims5->success == true)
