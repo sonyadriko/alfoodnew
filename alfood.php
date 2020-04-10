@@ -78,8 +78,8 @@ $headers[] = 'X-Location: -6.405821,106.064193';
                  $pilih1 = trim(fgets(STDIN));
                  if($pilih1 == "y" || $pilih1 == "Y"){
                  //if($pilih1 == "y" && strpos($no, "628")){
-                 echo color("nevy","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN GOPAY KAMU ADALAH = 121212 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
-                 $data2 = '{"pin":"121212"}';
+                 echo color("nevy","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN GOPAY KAMU ADALAH = 192939 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
+                 $data2 = '{"pin":"192939"}';
                  $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
                  echo "Otp pin: ";
                  $otpsetpin = trim(fgets(STDIN));
