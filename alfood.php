@@ -72,6 +72,20 @@ $headers[] = 'X-Location: -6.405821,106.064193';
                             }
                 sleep(5);
                 echo "\n";
+                    
+                  setpin:
+                 echo "\n".color("purple","🔧▶️ SET PIN GOPAY SEKALIAN ? !!!: Y/N ");
+                 $pilih1 = trim(fgets(STDIN));
+                 if($pilih1 == "y" || $pilih1 == "Y"){
+                 //if($pilih1 == "y" && strpos($no, "628")){
+                 echo color("nevy","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN GOPAY KAMU ADALAH = 121212 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
+                 $data2 = '{"pin":"121212"}';
+                 $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
+                 echo "Otp pin: ";
+                 $otpsetpin = trim(fgets(STDIN));
+                 $verifotpsetpin = request("/wallet/pin", $token, $data2, null, $otpsetpin, $uuid);
+                 echo $verifotpsetpin;
+                 }
             
                     
                 $cekvoucher = request('/gopoints/v3/wallet/vouchers?limit=10&page=1', $token);
