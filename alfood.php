@@ -45,8 +45,8 @@ $headers[] = 'X-Location: -6.405821,106.064193';
                 echo "Token ~> ".$token." \n";
                 echo "\e[92m[+] Token Tersimpan di ~> ".$live." \n\n";
 //     
-                echo "\e[96m[+] Proses Redeem Vocher : COBAGOFOOD010420A \n";
-                $data7 = '{"promo_code":"COBAGOFOOD010420A"}';
+                echo "\e[96m[+] Proses Redeem Vocher : COBAGOFOOD0906 \n";
+                $data7 = '{"promo_code":"COBAGOFOOD0906"}';
                 $claim4 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data7, $headers);
                 $claims4 = json_decode($claim4[0]);
                 if($claims4->success == true)
@@ -59,8 +59,8 @@ $headers[] = 'X-Location: -6.405821,106.064193';
                 sleep(5);
                 echo "\n";
                     
-                echo "\e[96m[+] Proses Redeem Vocher : COBAGOFOOD010420B \n";
-                $data8 = '{"promo_code":"COBAGOFOOD010420B"}';
+                echo "\e[96m[+] Proses Redeem Vocher : PESANGOFOOD0906 \n";
+                $data8 = '{"promo_code":"PESANGOFOOD0906"}';
                 $claim5 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data8, $headers);
                 $claims5 = json_decode($claim5[0]);
                 if($claims5->success == true)
